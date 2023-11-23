@@ -1,0 +1,45 @@
+.myOccasionsContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.myOccasionsContainer h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.myOccasionsContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.myOccasionsContainer li {
+    cursor: pointer;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myOccasionsContainer li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.myOccasionsContainer li:hover {
+    background-color: #f0f0f0;
+}
+
+.myOccasionsContainer h2 {
+    margin-top: 20px;
+    color: #4a4a4a;
+}
