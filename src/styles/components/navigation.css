@@ -1,0 +1,16 @@
+
+.navbar {
+    /* Adjust these styles according to your design */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
