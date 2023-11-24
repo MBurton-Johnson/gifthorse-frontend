@@ -1,0 +1,36 @@
+.occasionDetailEditGiftModal .modal-content {
+    padding: 20px;
+}
+
+.occasionDetailEditGiftModal input,
+.occasionDetailEditGiftModal textarea,
+.occasionDetailEditGiftModal select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.occasionDetailEditGiftModal textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.occasionDetailEditGiftModal .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.occasionDetailEditGiftModal .modal-footer .btn {
+    margin-left: 10px;
+}
+
+.occasionDetailEditGiftModal .modal-header {
+    border-bottom: 1px solid #eee;
+}
+
+.occasionDetailEditGiftModal .modal-footer {
+    border-top: 1px solid #eee;
+}

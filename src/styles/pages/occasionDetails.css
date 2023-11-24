@@ -32,6 +32,9 @@
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .recipientName {
@@ -47,13 +50,6 @@
     padding: 2px 8px; 
     border-radius: 4px; 
     margin-left: 5px; 
-}
-
-.occasionDetailsContainer li {
-    /* Existing styles... */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .deleteButton {
@@ -72,4 +68,32 @@
 
 .deleteButton:hover {
     background-color: #cc0000; /* Darker red on hover */
+}
+
+.editButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* Space between edit and delete buttons */
+    color: #333; /* Icon color */
+    font-size: 16px; /* Adjust icon size as needed */
+}
+
+.editButton:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background on hover for edit button */
+}
+
+.occasionDetailsContainer li {
+    /* Existing styles... */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.occasionDetailsContainer li div {
+    display: flex;
+    align-items: center;
 }
