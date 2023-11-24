@@ -25,6 +25,7 @@ const OccasionDetails = () => {
     const [recipients, setRecipients] = useState([]);
     const [showEditModal, setShowEditModal] = useState(false);
     const [editingGift, setEditingGift] = useState(null);
+    const [groupedGifts, setGroupedGifts] = useState({}); // New state for grouped gifts
 
 
     useEffect(() => {
@@ -57,6 +58,16 @@ const OccasionDetails = () => {
             .then(response => response.json())
             .then(data => setRecipients(data))
             .catch(error => console.error('Error fetching recipients:', error));
+        
+        // Additional logic to group gifts by status
+            fetch(`http://localhost:8000/gifts-for-occasion/${occasionId}/recipient/${recipientId}`)
+            .then(response => response.json())
+            .then(data => {
+                setGifts(data);
+                setGroupedGifts(groupGiftsByStatus(data)); // Group gifts by status
+            })
+            .catch(error => console.error('Error:', error));
+
     }, [recipientId, occasionId]);
 
     
@@ -115,10 +126,13 @@ const OccasionDetails = () => {
                 {'\'s Gifts for '}
                 <span className="occasionName">{occasionName}</span>
             </h1>
-            <ul>
-            {gifts.map(gift => (
-                <li key={gift.id}>
-                    {gift.name} - {gift.price}
+            {Object.keys(groupedGifts).map(status => (
+                <div key={status}>
+                    <h2>{status}</h2>
+                    <ul>
+                        {groupedGifts[status].map(gift => (
+                            <li key={gift.id}>
+                                {gift.name} - {gift.price}
                     <div>
                         <button 
                             className="editButton" 
@@ -134,8 +148,10 @@ const OccasionDetails = () => {
                         </button>
                     </div>
                     </li>
-                ))}
-            </ul>
+                        ))}
+                    </ul>
+                </div>
+            ))}
             <OccasionDetailEditGift 
                 show={showEditModal} 
                 gift={editingGift} 

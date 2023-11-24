@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/pages/myOccasions.css'; 
 
 const groupOccasionsByYearAndMonth = (occasions) => {
@@ -37,6 +38,8 @@ const MyOccasions = () => {
             .catch(error => console.error('Error fetching occasions:', error));
     }, []);
     
+const navigate = useNavigate();
+
     return (
         <div className="myOccasionsContainer">
             <h1>My Occasions</h1>
@@ -50,9 +53,12 @@ const MyOccasions = () => {
                             .map(month => (
                                 <div key={month} className="monthSection">
                                     <h3 className="monthHeading">{month}</h3>
+
                                     <ul>
                                         {groupedOccasions[year][month].map(occasion => (
-                                            <li key={occasion.id}>{occasion.name}</li>
+                                            <li key={occasion.id} onClick={() => navigate(`/occasion-gifts/${occasion.id}`)}>
+                                                {occasion.name}
+                                            </li>
                                         ))}
                                     </ul>
                                 </div>

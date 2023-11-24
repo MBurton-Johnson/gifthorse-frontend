@@ -1,0 +1,45 @@
+.occasionGiftsContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.occasionGiftsContainer h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.occasionGiftsContainer h2 {
+    color: #4a4a4a;
+    margin-top: 20px;
+}
+
+.occasionGiftsContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.occasionGiftsContainer li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.occasionGiftsContainer li:hover {
+    background-color: #f0f0f0;
+}
+
+.occasionGiftsContainer .occasionName {
+    background-color: #F49390; /* The desired background color */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 4px; /* Optional: rounded corners */
+    color: white; /* Text color for better readability */
+}
