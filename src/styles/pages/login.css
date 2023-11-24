@@ -1,0 +1,11 @@
+.Auth-form-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align to the top */
+    height: 100vh; /* Full viewport height */
+    padding-top: 10vh; /* Add some top padding */
+  }
+  
+  .Auth-form {
+    width: 300px; /* Adjust width as needed */
+  }

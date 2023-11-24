@@ -15,8 +15,8 @@ export function Navigation() {
 
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/">Gift Horse</Navbar.Brand>
+      <Navbar>
+      <Navbar.Brand href="/" className="navbar-brand-custom">Gift Horse</Navbar.Brand>
         <Nav className="me-auto">
           {isAuth ? <Nav.Link href="/">Home</Nav.Link> : null}
           {isAuth ? <Nav.Link href="/add-gift">Add Gift</Nav.Link> : null}

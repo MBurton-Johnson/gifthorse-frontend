@@ -1,16 +1,21 @@
-
 .navbar {
-    /* Adjust these styles according to your design */
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
-  
-  .navbar a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #0B3C49;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand-custom {
+  font-weight: bold; 
+  background-color: #2AB8DF; 
+  color: black !important; /* Adding !important to ensure this color takes precedence */
+  padding: 5px 10px;
+  border-radius: 5px;
+}

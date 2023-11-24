@@ -1,0 +1,50 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns items with space between */
+    padding: 20px;
+    width: 100%; /* Ensure the container takes the full width */
+    border-bottom: 2px solid #000; /* 2px solid black border at the bottom */
+    padding-bottom: 50px;
+  }
+  
+  .home-image {
+    max-width: 50%;
+    height: auto;
+    /* Remove margin-right if no longer needed */
+  }
+  
+  .greeting-message {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; /* Adjust as needed */
+    /* Center the text inside the greeting message if needed */
+    text-align: center;
+    width: 50%; /* Allocate equal width as the image for balanced spacing */
+  }
+  
+  .greeting-message h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 98px;
+    animation: colorCycle 10s infinite; /* Apply the animation, set duration and make it loop */
+  }
+  
+  .intro-text {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    max-width: 90%; /* Default max-width for smaller screens */
+    margin: 50px auto 0;
+    padding: 20px;
+    font-size: 18px;  
+    color: black;
+  }
+  
+
+  
+  
+  @keyframes colorCycle {
+    0%   { color: red; }
+    25%  { color: blue; }
+    50%  { color: green; }
+    75%  { color: purple; }
+    100% { color: orange; }
+  }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import OccasionDetailEditGift from '../components/EditGiftModal/OccasionDetailEditGift';
-import { PencilSquare, XSquare } from 'react-bootstrap-icons'; // Import icons
+import { PencilSquare } from 'react-bootstrap-icons'; // Import icons
 
 import '../styles/pages/occasionDetails.css';
 

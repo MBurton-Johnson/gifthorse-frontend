@@ -47,3 +47,46 @@
 .monthHeading {
     font-size:large
 }
+
+.add-occasion-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+/* Existing CSS... */
+
+.editButton, .deleteButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editButton {
+    color: #007bff; /* Bootstrap primary blue */
+    font-size: 20px;
+}
+
+.deleteButton {
+    color: white;
+    background-color: #dc3545; /* Bootstrap danger red */
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Style for hover effects */
+.editButton:hover, .deleteButton:hover {
+    opacity: 0.8;
+}
+
+.occasionButtonContainer {
+    margin-left: auto; /* This pushes the container to the right */
+    display: flex;
+    align-items: center;
+}
