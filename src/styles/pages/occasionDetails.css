@@ -1,0 +1,75 @@
+.occasionDetailsContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.occasionDetailsContainer h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5; 
+    margin-bottom: 25px;
+
+}
+
+.occasionDetailsContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.occasionDetailsContainer li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.occasionDetailsContainer li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.recipientName {
+    background-color: #333; 
+    color: white; 
+    padding: 2px 8px; 
+    border-radius: 4px; 
+    margin-right: 5px;
+}
+
+.occasionName {
+    background-color: #F9DB6D; 
+    padding: 2px 8px; 
+    border-radius: 4px; 
+    margin-left: 5px; 
+}
+
+.occasionDetailsContainer li {
+    /* Existing styles... */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteButton {
+    background-color: #ff4d4d; /* Red background for delete button */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 20px; /* Small width */
+    height: 20px; /* Small height */
+    font-size: 12px; /* Smaller font */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteButton:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}

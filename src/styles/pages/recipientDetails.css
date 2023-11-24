@@ -42,3 +42,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttonContainer button {
+    margin: 0 10px;
+}

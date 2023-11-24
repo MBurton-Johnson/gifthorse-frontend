@@ -9,6 +9,7 @@ import MyGifts from './pages/myGifts';
 import MyRecipients from './pages/myRecipients'; 
 import RecipientDetails from './pages/recipientDetails';
 import MyOccasions from './pages/myOccasions'; 
+import OccasionDetails from './pages/occasionDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/my-recipients" element={<MyRecipients />} />
         <Route path="/recipient-details/:recipientId" element={<RecipientDetails />} />
         <Route path="/my-occasions" element={<MyOccasions />} />
+        <Route path="/occasion-details/:recipientId/:occasionId" element={<OccasionDetails />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
       </Routes>
